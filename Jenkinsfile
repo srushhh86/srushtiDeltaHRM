@@ -32,7 +32,7 @@ parameters {
             steps {
  
                 git branch: 'master',
-                url: 'https://github.com/Karna1919/deltaHRM_Automation.git'
+                url: 'https://github.com/srushhh86/srushtiDeltaHRM.git'
             }
         }
  

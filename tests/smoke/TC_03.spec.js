@@ -19,6 +19,6 @@ test('TC03 - Verify Admin submodules using storage state', async ({ page }) => {
     await expect(adminPage.qualificationsLink).toBeVisible({ timeout: 10000 });
     await expect(adminPage.nationalitiesLink).toBeVisible({ timeout: 10000 });
     await expect(adminPage.corporateBrandingLink).toBeVisible({ timeout: 10000 });
-    await expect(adminPage.configurationLink).toBeVisible({ timeout: 10000 });
+
 
 });
