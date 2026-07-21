@@ -5,7 +5,7 @@ import HomePage from "../../delta_Page_Object_Model/homePage.js"
 import { PIMPage } from "../../delta_Page_Object_Model/PIMPage.js"
 import { AddEmployee } from "../../delta_Page_Object_Model/addEmployee.js"
 import employeeData from "../../TestData/employeeData.json"
-import  CommonUtils  from "../../delta_Utility/commonUitils.js"
+import  CommonUtils  from "../../delta_Utility/commonUtils.js"
 import fs from 'fs';
 import employeeGeneratedData from "../../TestData/employeeGeneratedData.json"
 
@@ -37,7 +37,7 @@ test("create Employee",async({loginPage})=>
     // Generate random employee data
     employeeGeneratedData.empnameRandom = employeeData.empname + randomNum
     employeeGeneratedData.usernameRandom = employeeData.username + randomNum
-    employeeGeneratedData.empIDRandom=employeeData.empID+randomNum
+    employeeGeneratedData.empIDRandom=randomNum
 
     // Write the generated data to a JSON file
     fs.writeFileSync('TestData/employeeGeneratedData.json', JSON.stringify(employeeGeneratedData, null, 2));

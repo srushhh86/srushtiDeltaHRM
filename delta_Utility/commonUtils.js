@@ -5,4 +5,5 @@ export default class CommonUtils {
         return Math.floor(Math.random() * max);
     }
 
+    
 }

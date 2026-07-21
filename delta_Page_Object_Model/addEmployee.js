@@ -10,14 +10,13 @@ export class AddEmployee {
         this.lastnameTextField = page.getByPlaceholder("Last Name")
         this.employeeIdTextField = page.locator("//label[text()='Employee Id']/ancestor::div[@class='oxd-grid-item oxd-grid-item--gutters']/descendant::input")
         this.createLoginToggle = page.locator('//span[@class="oxd-switch-input oxd-switch-input--active --label-right"]')
-       // this.employeeIdTextField = page.getByRole('textbox', { name: 'Employee Id' })
-        this.usernameTextField =  page.locator('//label[@class="oxd-label oxd-input-field-required" and text()="Username"]/ancestor::div[@class="oxd-grid-item oxd-grid-item--gutters"]/descendant::input')
+        this.usernameTextField = page.locator('//label[@class="oxd-label oxd-input-field-required" and text()="Username"]/ancestor::div[@class="oxd-grid-item oxd-grid-item--gutters"]/descendant::input')
         this.passwordTextField = page.locator('//label[@class="oxd-label oxd-input-field-required" and text()="Password"]/ancestor::div[@class="oxd-grid-item oxd-grid-item--gutters user-password-cell"]/descendant::input')
-        this.saveEmployeeButton = page.getByRole('button',{name:"Save"})
-this.confirmPasswordTextField = page.locator('//label[@class="oxd-label oxd-input-field-required" and text()="Confirm Password"]/ancestor::div[@class="oxd-grid-item oxd-grid-item--gutters"]/descendant::input')
+        this.saveEmployeeButton = page.getByRole('button', { name: "Save" })
+        this.confirmPasswordTextField = page.locator('//label[@class="oxd-label oxd-input-field-required" and text()="Confirm Password"]/ancestor::div[@class="oxd-grid-item oxd-grid-item--gutters"]/descendant::input')
         this.succesfullToaster = page.locator('#oxd-toaster_1')
-        this.uploadImageBtn =  page.locator("//button[@class='oxd-icon-button oxd-icon-button--solid-main employee-image-action']")
-       this.toasterMessage = page.locator('//p[@class="oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text"]')
+        this.uploadImageBtn = page.locator("//button[@class='oxd-icon-button oxd-icon-button--solid-main employee-image-action']")
+        this.toasterMessage = page.locator('//p[@class="oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text"]')
     }
 
     async createEmployee(firstname, lastname, employeeId, username, password) {
