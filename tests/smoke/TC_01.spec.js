@@ -1,5 +1,5 @@
 import { test } from "@playwright/test"
-import Login from "../../delta_Page_Object_Model/loginPage"
+import Login from "../../delta_Page_Object_Model/LoginModule/loginPage"
 
 
 test.use({

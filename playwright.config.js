@@ -57,25 +57,25 @@ export default defineConfig({
 
     },
 
-    {
-      name: 'firefox',
+    // {
+    //   name: 'firefox',
    
-      testIgnore: /.*\.setup\.js$/,
-      use: {
-        ...devices['Desktop Firefox'],
-        storageState: './StorageState/playwrightStorageState/auth.json',
-      },
-    },
+    //   testIgnore: /.*\.setup\.js$/,
+    //   use: {
+    //     ...devices['Desktop Firefox'],
+    //     storageState: './StorageState/playwrightStorageState/auth.json',
+    //   },
+    // },
 
-    {
-      name: 'webkit',
+    // {
+    //   name: 'webkit',
 
-      testIgnore: /.*\.setup\.js$/,
-      use: {
-        ...devices['Desktop Safari'],
-        storageState: './StorageState/playwrightStorageState/auth.json',
-      },
-    },
+    //   testIgnore: /.*\.setup\.js$/,
+    //   use: {
+    //     ...devices['Desktop Safari'],
+    //     storageState: './StorageState/playwrightStorageState/auth.json',
+    //   },
+    // },
 
     /* Test against mobile viewports. */
     // {

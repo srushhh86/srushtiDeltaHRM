@@ -1,5 +1,5 @@
 import { test, expect } from "../../Fixtures/baseFixture.js"
-import HomePage from "../../delta_Page_Object_Model/homePage.js"
+import HomePage from "../../delta_Page_Object_Model/DashBoardModule/homePage.js"
 
 test("verify dashboard widget is visible", async ({ loginPage }) => {
     let page = loginPage
