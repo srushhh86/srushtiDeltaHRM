@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import HomePage from '../../delta_Page_Object_Model/homePage.js';
-import { AdminPage } from '../../delta_Page_Object_Model/adminPage.js';
+import HomePage from '../../delta_Page_Object_Model/DashBoardModule/homePage.js';
+import { AdminPage } from '../../delta_Page_Object_Model/AdminModule/adminPage.js';
 
 //test.use({ storageState: './StorageState/playwrightStorageState/auth.json' });
 

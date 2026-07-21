@@ -1,9 +1,9 @@
 
 
 import{test,expect}from"../../Fixtures/baseFixture.js"
-import HomePage from "../../delta_Page_Object_Model/homePage.js"
-import { PIMPage } from "../../delta_Page_Object_Model/PIMPage.js"
-import { AddEmployee } from "../../delta_Page_Object_Model/addEmployee.js"
+import HomePage from "../../delta_Page_Object_Model/DashBoardModule/homePage.js"
+import { PIMPage } from "../../delta_Page_Object_Model/PIMModule/PIMPage.js"
+import { AddEmployee } from "../../delta_Page_Object_Model/PIMModule/addEmployee.js"
 import employeeData from "../../TestData/employeeData.json"
 import  CommonUtils  from "../../delta_Utility/commonUtils.js"
 import fs from 'fs';

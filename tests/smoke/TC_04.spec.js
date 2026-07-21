@@ -1,8 +1,8 @@
 
 
 import{test,expect}from"../../Fixtures/baseFixture.js"
-import HomePage from "../../delta_Page_Object_Model/homePage.js"
-import { PIMPage } from "../../delta_Page_Object_Model/PIMPage.js"
+import HomePage from "../../delta_Page_Object_Model/DashBoardModule/homePage.js"
+import { PIMPage } from "../../delta_Page_Object_Model/PIMModule/PIMPage.js"
 
 test("User should able to search for an employee in the PIM Employee List",async({loginPage})=>
 {

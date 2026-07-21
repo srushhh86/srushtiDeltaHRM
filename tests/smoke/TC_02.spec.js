@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import Login from '../../delta_Page_Object_Model/loginPage.js';
+import Login from '../../delta_Page_Object_Model/LoginModule/loginPage.js';
 import negativeLoginData from '../../TestData/negativeLoginData.json' assert { type: 'json' };
 
 test.use({

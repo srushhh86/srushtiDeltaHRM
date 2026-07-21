@@ -1,7 +1,7 @@
 import { test,expect } from '@playwright/test';
 import path from 'path';
 import fs from 'fs';
-import Login from '../delta_Page_Object_Model/loginPage.js';
+import Login from '../delta_Page_Object_Model/LoginModule/loginPage.js';
 
 const storageStatePath = path.resolve('StorageState/playwrightStorageState/auth.json');
 

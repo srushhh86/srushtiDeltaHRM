@@ -1,7 +1,7 @@
 import{test,expect}from"@playwright/test"
 
-import HomePage from "../../delta_Page_Object_Model/homePage.js"
-import ChangePassword from "../../delta_Page_Object_Model/changepasswordPage.js"
+import HomePage from "../../delta_Page_Object_Model/DashBoardModule/homePage.js"
+import ChangePassword from "../../delta_Page_Object_Model/DashBoardModule/changepasswordPage.js"
 test("User should able to 'change the logged-in user's own account password' ",async({page})=>
 {
     await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index")
