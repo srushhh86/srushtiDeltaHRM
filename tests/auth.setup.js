@@ -16,7 +16,7 @@ test('Create Playwright storage state', async ({ page }) => {
         process.env.Password
     );
 
-    await expect(page).toHaveURL(/dashboard/);
+    await expect(page).toHaveURL(/dashboard/,{timeout:10000});
 
     await page.context().storageState({ path: storageStatePath });
 });

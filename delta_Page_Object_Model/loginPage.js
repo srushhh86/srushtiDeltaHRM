@@ -9,7 +9,7 @@ class Login
         this.passwordTxt=page.getByPlaceholder("Password")
         this.submitBtn=page.locator("//button[@type='submit']")
     }
-    async loginToApplication(url = process.env.URL, username = process.env.LOGIN_USR, password = process.env.LOGIN_PSW)
+    async loginToApplication(url = process.env.URL, username = process.env.User_Name, password = process.env.Password)
     {
         await this.page.goto(url)
         await this.userNameTxt.fill(username)
