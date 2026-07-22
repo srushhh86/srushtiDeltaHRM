@@ -8,7 +8,7 @@ pipeline {
     }
 
     tools {
-        nodejs 'NodeJS18'
+        nodejs 'NodeJS-22'
     }
 
     parameters {
