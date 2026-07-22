@@ -47,7 +47,6 @@ test("create Employee", async ({ loginPage }) => {
 
     //upload the employee image
 
-    console.log(ActionUtils);
     await ActionUtils.uploadUsingFileChooser(page, addEmployee.uploadImageBtn, profileFilePath)
 
         //fill the employee details
